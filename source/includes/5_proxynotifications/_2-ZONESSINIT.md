@@ -1,11 +1,11 @@
-## CHANNELS\_INIT
+## ZONES\_INIT
 
-Initializes MIXER\_CHANNELS Structure.
+**ZONES INIT**
 
+Initializes MIXER\_ZONES Structure.
 
 ### Name
-`CHANNELS_INIT(MIXER_CHANNELS: Table)`
-
+`ZONES_INIT(MIXER_ZONES: Table)`
 
 | Parameter | Type | Description                                  |
 | --------- | ---- | -------------------------------------------- |
