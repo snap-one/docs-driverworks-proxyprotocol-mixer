@@ -1,0 +1,1327 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Driverworks Reference</title>
+
+    <style media="screen">
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <style media="print">
+      * {
+        -webkit-transition:none!important;
+        transition:none!important;
+      }
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #586e75;
+}
+.highlight .err {
+  color: #002b36;
+  background-color: #dc322f;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #657b83;
+}
+.highlight .cp {
+  color: #b58900;
+}
+.highlight .nt {
+  color: #b58900;
+}
+.highlight .o, .highlight .ow {
+  color: #93a1a1;
+}
+.highlight .p, .highlight .pi {
+  color: #93a1a1;
+}
+.highlight .gi {
+  color: #859900;
+}
+.highlight .gd {
+  color: #dc322f;
+}
+.highlight .gh {
+  color: #268bd2;
+  background-color: #002b36;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #6c71c4;
+}
+.highlight .kc {
+  color: #cb4b16;
+}
+.highlight .kt {
+  color: #cb4b16;
+}
+.highlight .kd {
+  color: #cb4b16;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #859900;
+}
+.highlight .sa {
+  color: #6c71c4;
+}
+.highlight .sr {
+  color: #2aa198;
+}
+.highlight .si {
+  color: #d33682;
+}
+.highlight .se {
+  color: #d33682;
+}
+.highlight .nn {
+  color: #b58900;
+}
+.highlight .nc {
+  color: #b58900;
+}
+.highlight .no {
+  color: #b58900;
+}
+.highlight .na {
+  color: #268bd2;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #859900;
+}
+.highlight .ss {
+  color: #859900;
+}
+    </style>
+    <link href="stylesheets/screen-4e483f2e.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-966d6edc.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-b12a2749.js"></script>
+
+  </head>
+
+  <body class="index" data-languages="[&quot;lua&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-3056e635.png" class="logo" alt="" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="lua">lua</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#license-copyright-and-trademark" class="toc-h1 toc-link" data-title="License, Copyright, and Trademark">License, Copyright, and Trademark</a>
+          </li>
+          <li>
+            <a href="#what-s-new" class="toc-h1 toc-link" data-title="What’s New">What’s New</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-4-1-0" class="toc-h2 toc-link" data-title="What’s New in 4.1.0">What’s New in 4.1.0</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#introduction-what-s-new-in-4-1-0-lua-mixer-proxy" class="toc-h2 toc-link" data-title="Lua Mixer Proxy">Lua Mixer Proxy</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#mixer-proxy-commands" class="toc-h1 toc-link" data-title="Mixer Proxy Commands">Mixer Proxy Commands</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#mixer-proxy-commands-set_channel" class="toc-h2 toc-link" data-title="SET_CHANNEL">SET_CHANNEL</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_routing" class="toc-h2 toc-link" data-title="SET_ROUTING ">SET_ROUTING </a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_channel_input_level" class="toc-h2 toc-link" data-title="SET_CHANNEL_INPUT_LEVEL ">SET_CHANNEL_INPUT_LEVEL </a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_channel_muted" class="toc-h2 toc-link" data-title="SET_CHANNEL_MUTED">SET_CHANNEL_MUTED</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_eq_enabled" class="toc-h2 toc-link" data-title="SET_EQ_ENABLED">SET_EQ_ENABLED</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_compressor_enabled" class="toc-h2 toc-link" data-title="SET_COMPRESSOR_ENABLED">SET_COMPRESSOR_ENABLED</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_de_esser_enabled" class="toc-h2 toc-link" data-title="SET_DE_ESSER_ENABLED">SET_DE_ESSER_ENABLED</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_noise_gate_enabled" class="toc-h2 toc-link" data-title="SET_NOISE_GATE_ENABLED">SET_NOISE_GATE_ENABLED</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_eq_band_enabled" class="toc-h2 toc-link" data-title="SET_EQ_BAND_ENABLED">SET_EQ_BAND_ENABLED</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_eq_band_gain_level" class="toc-h2 toc-link" data-title="SET_EQ_BAND_GAIN_LEVEL">SET_EQ_BAND_GAIN_LEVEL</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_eq_band_q_level" class="toc-h2 toc-link" data-title="SET_EQ_BAND_Q_LEVEL">SET_EQ_BAND_Q_LEVEL</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_eq_band_frquency" class="toc-h2 toc-link" data-title="SET_EQ_BAND_FRQUENCY">SET_EQ_BAND_FRQUENCY</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_compressor_component_value" class="toc-h2 toc-link" data-title="SET_COMPRESSOR_COMPONENT_VALUE">SET_COMPRESSOR_COMPONENT_VALUE</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_de_esser_component_value" class="toc-h2 toc-link" data-title="SET_DE_ESSER_COMPONENT_VALUE">SET_DE_ESSER_COMPONENT_VALUE</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-commands-set_noise_gate_component_value" class="toc-h2 toc-link" data-title="SET_NOISE_GATE_COMPONENT_VALUE">SET_NOISE_GATE_COMPONENT_VALUE</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#mixer-proxy-notifications" class="toc-h1 toc-link" data-title="Mixer Proxy Notifications">Mixer Proxy Notifications</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#mixer-proxy-notifications-channels_init" class="toc-h2 toc-link" data-title="CHANNELS_INIT">CHANNELS_INIT</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-notifications-zones_init" class="toc-h2 toc-link" data-title="ZONES_INIT">ZONES_INIT</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-notifications-mixes_init" class="toc-h2 toc-link" data-title="MIXES_INIT">MIXES_INIT</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-notifications-mixer_connections" class="toc-h2 toc-link" data-title="MIXER_CONNECTIONS">MIXER_CONNECTIONS</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-notifications-channels_changed" class="toc-h2 toc-link" data-title="CHANNELS_CHANGED">CHANNELS_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-notifications-channel_changed" class="toc-h2 toc-link" data-title="CHANNEL_CHANGED">CHANNEL_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-notifications-zone_changed" class="toc-h2 toc-link" data-title="ZONE_CHANGED">ZONE_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-notifications-zone_source_changed" class="toc-h2 toc-link" data-title="ZONE_SOURCE_CHANGED">ZONE_SOURCE_CHANGED</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#mixer-proxy-variables" class="toc-h1 toc-link" data-title="Mixer Proxy Variables">Mixer Proxy Variables</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#mixer-proxy-variables-active_rooms" class="toc-h2 toc-link" data-title="ACTIVE_ROOMS">ACTIVE_ROOMS</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#mixer-proxy-connections" class="toc-h1 toc-link" data-title="Mixer Proxy Connections">Mixer Proxy Connections</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#mixer-proxy-connections-channel_connections" class="toc-h2 toc-link" data-title="CHANNEL_CONNECTIONS">CHANNEL_CONNECTIONS</a>
+                  </li>
+                  <li>
+                    <a href="#mixer-proxy-connections-channel_connections" class="toc-h2 toc-link" data-title="CHANNEL_CONNECTIONS">CHANNEL_CONNECTIONS</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/snap-one/docs-driverworks'>DriverWorks GitHub Home</a></li>
+            <li><a href='https://snap-one.github.io/docs-driverworks-introduction/'>An Introduction to DriverWorks</a></li>
+            <li><a href='https://snap-one.github.io/docs-driverworks-fundamentals/'>DriverWorks Fundamentals Guide</a></li>
+            <li><a href='https://snap-one.github.io/docs-driverworks-api/'>DriverWorks API Reference Guide</a></li>
+            <li><a href='https://snap-one.github.io/docs-driverworks-xml/'>DriverWorks XML Reference</a></li>
+            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='license-copyright-and-trademark'>License, Copyright, and Trademark</h1>
+
+<p>The content contained in this repository is the intellectual property of Snap One, LLC, (formerly known as Wirepath Home Systems, LLC), and use without a valid license from Snap One is strictly prohibited. The user of this repository shall keep all content contained herein confidential and shall protect this content in whole or in part from disclosure to any and all third parties except as specifically authorized in writing by Snap One.</p>
+
+<p><strong>License and Intellectual Property Disclaimer</strong></p>
+
+<p>The content in this repository is provided in connection with Snap One products. No license, express or implied, by estoppal or otherwise, to any intellectual property rights is granted by this document or in this repository. Except as provided in Snap Oneʼs terms and conditions for the license of such products, Snap One and its affiliates assume no liability whatsoever and disclaim any express or implied warranty, relating to the sale and/or use of Snap One products including liability or warranties relating to fitness for a particular purpose, merchantability, or infringement of any patent, copyright or other intellectual property right. Snap One products are not intended for use in medical, lifesaving, or life sustaining applications.</p>
+
+<p>Information regarding third-party products is provided solely for educational purposes. Snap One is not responsible for the performance or support of third-party products and does not make any representations or warranties whatsoever regarding the quality, reliability, functionality or compatibility of these products. The reader is advised that third parties can have intellectual property rights that can be relevant to this repository and the technologies discussed herein, and is advised to seek the advice of competent legal counsel regarding the intellectual property rights of third parties, without obligation of Snap One.</p>
+
+<p>Snap One retains the right make changes to this repository or related product specifications and descriptions in this repository, at any time, without notice. Snap One makes no warranty for the use of this repository and assumes no responsibility for any errors that can appear in the repository nor does it make a commitment to update the content contained herein.</p>
+
+<p><strong>Copyright</strong></p>
+
+<p>Copyright 2025 Snap One, LLC. All rights reserved.</p>
+
+<p>The above copyright notice applies to all content in this repository unless otherwise stated explicitly herein that a third-party’s copyright applies.</p>
+
+<p>No part of this publication may be reproduced, photocopied, stored on a retrieval system, or transmitted without the express written consent of the publisher.</p>
+
+<p><strong>Trademarks</strong></p>
+
+<p>Snap One and Snap One Logo, Control4 and the Control4 logo, and DriverWorks are trademarks or registered trademarks of  Snap One, LLC. Other product and company names mentioned in this repository may be the trademarks or registered trademarks of their respective owners.</p>
+
+<p><strong> Derivative Works</strong></p>
+
+<p>To the extent that you create any “Derivative Work” (meaning any work that is based upon one or more preexisting versions of the work provided to you in this repository, such as an enhancement or modification, revision, translation, abridgement, condensation, expansion, collection, compilation or any other form in which such preexisting works may be recast, modified, transformed or adapted, explicitly including without limitation, any updates or changes to Snap One, LLC’s software code or intellectual property) such Derivative Work shall be owned by Snap One, LLC and all right, title and interest in and to each such Derivative Work shall automatically vest in Snap One, LLC. To the extent any Derivative Work does not automatically vest in Snap One, LLC by operation of law, you hereby assign such Derivative Work to Snap One, LLC with full title guarantee. Snap One, LLC shall have no obligation to grant you any right in any such Derivative Work.</p>
+
+<p><strong>Contact Us</strong></p>
+
+<p>Snap One, LLC
+11734 S. Election Road
+Salt Lake City, UT 84020 USA</p>
+
+<p><a href="www.control4.com">http://www.control4.com</a></p>
+<h1 id='what-s-new'>What’s New</h1>
+
+<h2 id='what-s-new-what-s-new-in-4-1-0'>What’s New in 4.1.0</h2>
+
+<p>The Mixer proxy was delivered in conjunction with Operating System 4.1.0.</p>
+<p><h1 id='introduction'>Introduction</h1><h3 id='introduction-what-s-new-in-4-1-0-lua-mixer-proxy'>Lua Mixer Proxy</h3>
+<p><em>Note: The Mixer Proxy is the first Lua Proxy delivered by Control4. The architecture used to develop this proxy is not currently available to third party developers. Furthermore, drivers developed using the Lua Proxy methodology lack a user interface which is typically provided for a driver written using  Control4’s traditional, non-Lua proxies. Control4 is not in a position to provide user interfaces for third party drivers written using a Lua proxy.</em></p></p>
+
+<p>The Mixer proxy is intended to be used in conjunction with the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-avswitch/#license-copyright-and-trademark">AV Switch proxy</a>. The AV Switch proxy handles all the typical AV Switch functions such as input/output selection, room/zone volume control, etc. The Mixer proxy extends this functionality to support Mixer channel volume/mute control as well as Digital Signal Processing (DSP). </p>
+
+<p>In addition to the normal AV Switch constructs of Inputs, Outputs and Selected Source the Mixer proxy adds Channels, Zones and Mixes. Channels also support advanced DSP signal processing including EQ, Compression, De-Essing and Noise Gate.</p>
+
+<p>AV Pathing and Source selection are at the heart of most AV proxies and the Mixer proxy is no different. However, since the Mixer proxy is designed to extend the AV Switch proxy, some of these lines do get blurred. For example, a CD player bound to an input of the protocol driver is part of the AV Switch pathing logic but it is also a channel of the Mixer and as such can be part of a Mix.</p>
+
+<p>Furthermore, it may be desired to start an audio session by just selecting a Mix of channels and not have a particular selected (controllable) source. Or the user may wish to select a single microphone (not controllable) as the selected source. To handle these use cases, No Control drivers have been created for both Microphone and Mix.</p>
+
+<p>Since Mixes and Channels require different handling logic, the Mixer proxy must know if the selected source is a Channel or a Mix. To support this functionality, special mixId and channelId elements must be included in the appropriate Input Connections in the protocol driver. Using this modeling, the Proxy maintains a map of all connections with this data in the MIXER_CONNECTIONS table.</p>
+
+<p>An important distinction (and possible source of confusion) is how the UI and Proxy handle Input Channel Volume. As in the case of actual mixer devices, an input channel has a level (volume) control which will affect the signal before any further modification of that channel in a mix. For example, if a device can create more than one mix, changing the input channel volume will affect the level of that channel in all mixes. Whereas changing the volume of that channel in a mix will only affect the level of that channel in that mix. While this is a straightforward concept, it does get clouded by Control4 source selection and control logic in conjunction with the fact that the mixer proxy is the first AV Proxy that handles volume control of an input (Room volume control adjusts the volume of an output/zone in a device). To simplify user interaction, it has been decided that, from a Control4 perspective, Input Channel Level will be a configuration element and not supported via the Control4 UI. So, when a Source is selected, the level control is visible but grayed out and not available for modification. When a Mix is selected, all Channels are available for modification in that Mix.</p>
+
+<p><strong>Channel Selected</strong>
+<img src="images/mixerproxy001-2a6b3f07.jpg"/></p>
+
+<p><strong>Mix Selected</strong>
+<img src="images/mixerproxy002-7d561279.jpg"/></p>
+
+<p><strong>Minimum Requirements</strong></p>
+
+<ul>
+<li>Composer Pro: 4.1.0</li>
+<li>Director version: 4.0.0</li>
+</ul>
+<h1 id='mixer-proxy-commands'>Mixer Proxy Commands</h1>
+
+<h2 id='mixer-proxy-commands-set_channel'>SET_CHANNEL</h2>
+
+<p>Sets any element that is declared in the JSON Channel structure. The parameter &#39;id&#39; is required, the other parameters dictate the element to be set.</p>
+
+<h3 id='mixer-proxy-commands-set_channel-name'>Name</h3>
+
+<p><code>SET_CHANNEL (param: String)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>param</td>
+<td>STRING</td>
+<td>JSON String</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-commands-set_channel-example'>Example</h3>
+
+<p>In this example, the EQ for Channel 1 is being disabled.</p>
+
+<p><code>SET_CHANNEL({param = &#39;{&quot;RoomId&quot;:7856,&quot;eq&quot;:{&quot;enabled&quot;:false},&quot;id&quot;:1}}&#39;)</code></p>
+
+<h2 id='mixer-proxy-commands-set_routing'>SET_ROUTING </h2>
+
+<p>Routes a Channel or a Mix to a Zone.</p>
+
+<h3 id='mixer-proxy-commands-set_routing-name'>Name</h3>
+
+<p><code>SET_ROUTING ({ZONE_ID: Int, CHANNEL_ID: Int})</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>zoneId</td>
+<td>INT</td>
+<td>ID value of the zone.</td>
+</tr>
+<tr>
+<td>channelId</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-commands-set_routing-example'>Example</h3>
+
+<p>In this example, the Channel 1 is Routed to Zone 1.</p>
+
+<p><code>SET_ROUTING ({ZONE_ID = 1, CHANNEL_ID = 1})</code></p>
+
+<h2 id='mixer-proxy-commands-set_channel_input_level'>SET_CHANNEL_INPUT_LEVEL </h2>
+
+<p>Sets the Input Level for a Channel.</p>
+
+<h3 id='mixer-proxy-commands-set_channel_input_level-name'>Name</h3>
+
+<p><code>SET_CHANNEL_INPUT_LEVEL (roomId: Long, channelId: Int, level: Int)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>roomId</td>
+<td>Long</td>
+<td>ID value of the room.</td>
+</tr>
+<tr>
+<td>channeld</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+<tr>
+<td>level</td>
+<td>INT</td>
+<td>Level value.</td>
+</tr>
+</tbody></table>
+
+<h2 id='mixer-proxy-commands-set_channel_muted'>SET_CHANNEL_MUTED</h2>
+
+<p>Sets Mute for a Channel.</p>
+
+<h3 id='mixer-proxy-commands-set_channel_muted-name'>Name</h3>
+
+<p><code>SET_CHANNEL_MUTED(roomId: Long, channelId: Int, muted: Boolean)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>roomId</td>
+<td>Long</td>
+<td>ID value of the room.</td>
+</tr>
+<tr>
+<td>channeld</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+<tr>
+<td>muted</td>
+<td>Bool</td>
+<td>Mute state (t/f).</td>
+</tr>
+</tbody></table>
+
+<h2 id='mixer-proxy-commands-set_eq_enabled'>SET_EQ_ENABLED</h2>
+
+<p>Enable/Disable EQ for a Channel.</p>
+
+<h3 id='mixer-proxy-commands-set_eq_enabled-name'>Name</h3>
+
+<p><code>SET_EQ_ENABLED(roomId: Long, channelId: Int, enabled: Boolean)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>roomId</td>
+<td>Long</td>
+<td>ID value of the room.</td>
+</tr>
+<tr>
+<td>channeld</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+<tr>
+<td>enabled</td>
+<td>Bool</td>
+<td>EQ enabled state (t/f).</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-commands-set_eq_enabled-example'>Example</h3>
+
+<p><code>SET_EQ_ENABLED({enabled = True, channelId = 2, roomId:  7977})</code></p>
+
+<h2 id='mixer-proxy-commands-set_compressor_enabled'>SET_COMPRESSOR_ENABLED</h2>
+
+<p>Enable/Disable Compressor for a Channel.</p>
+
+<h3 id='mixer-proxy-commands-set_compressor_enabled-name'>Name</h3>
+
+<p><code>SET_COMPRESSOR_ENABLED(roomId: Long, channelId: Int, enabled: Boolean)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>roomId</td>
+<td>Long</td>
+<td>ID value of the room.</td>
+</tr>
+<tr>
+<td>channeld</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+<tr>
+<td>enabled</td>
+<td>Bool</td>
+<td>Compressor enabled state (t/f).</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-commands-set_compressor_enabled-example'>Example</h3>
+
+<p><code>SET_COMPRESSOR_ENABLED({enabled = True, channelId = 2, roomId:  7977})</code></p>
+
+<h2 id='mixer-proxy-commands-set_de_esser_enabled'>SET_DE_ESSER_ENABLED</h2>
+
+<p>Enable/Disable De-Esser for a Channel.</p>
+
+<h3 id='mixer-proxy-commands-set_de_esser_enabled-name'>Name</h3>
+
+<p><code>SET_DE_ESSER_ENABLED(roomId: Long, channelId: Int, enabled: Boolean)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>roomId</td>
+<td>Long</td>
+<td>ID value of the room.</td>
+</tr>
+<tr>
+<td>channeld</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+<tr>
+<td>enabled</td>
+<td>Bool</td>
+<td>De-esser enabled state (t/f).</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-commands-set_de_esser_enabled-example'>Example</h3>
+
+<p><code>SET_DE_ESSER_ENABLED({enabled = True, channelId = 2, roomId:  7977})</code></p>
+
+<h2 id='mixer-proxy-commands-set_noise_gate_enabled'>SET_NOISE_GATE_ENABLED</h2>
+
+<p>Enable/Disable Noise Gate for a Channel.</p>
+
+<h3 id='mixer-proxy-commands-set_noise_gate_enabled-name'>Name</h3>
+
+<p><code>SET_NOISE_GATE_ENABLED (roomId: Long, channelId: Int, enabled: Boolean)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>roomId</td>
+<td>Long</td>
+<td>ID value of the room.</td>
+</tr>
+<tr>
+<td>channeld</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+<tr>
+<td>enabled</td>
+<td>Bool</td>
+<td>Noise Gate enabled state (t/f).</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-commands-set_noise_gate_enabled-example'>Example</h3>
+
+<p><code>SET_NOISE_GATE_ENABLED({enabled = True, channelId = 2, roomId:  7977})</code></p>
+
+<h2 id='mixer-proxy-commands-set_eq_band_enabled'>SET_EQ_BAND_ENABLED</h2>
+
+<p><strong> SET EQ BAND ENABLED</strong></p>
+
+<p>Enable/Disable an EQ Band for a Channel.</p>
+
+<h3 id='mixer-proxy-commands-set_eq_band_enabled-name'>Name</h3>
+
+<p><code>SET_EQ_BAND_ENABLED(roomId: Long, channelId: Int, bandId: Int, enabled: Boolean)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>roomId</td>
+<td>Long</td>
+<td>ID value of the room.</td>
+</tr>
+<tr>
+<td>channeld</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+<tr>
+<td>bandId</td>
+<td>INT</td>
+<td>ID value of the EQ band.</td>
+</tr>
+<tr>
+<td>enabled</td>
+<td>Bool</td>
+<td>EQ Band enabled state (t/f).</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-commands-set_eq_band_enabled-example'>Example</h3>
+
+<p><code>SET_EQ_BAND_ENABLED({channelId = 2, bandId = 1, enabled = True, roomId:  7977})</code></p>
+
+<h2 id='mixer-proxy-commands-set_eq_band_gain_level'>SET_EQ_BAND_GAIN_LEVEL</h2>
+
+<p>Sets the EQ Band gain level for a Channel.</p>
+
+<h3 id='mixer-proxy-commands-set_eq_band_gain_level-name'>Name</h3>
+
+<p><code>SET_EQ_BAND_GAIN_LEVEL(roomId: Long, channelId: Int, bandId: Int, level: Float)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>roomId</td>
+<td>Long</td>
+<td>ID value of the room.</td>
+</tr>
+<tr>
+<td>channeld</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+<tr>
+<td>bandId</td>
+<td>INT</td>
+<td>ID value of the EQ band.</td>
+</tr>
+<tr>
+<td>level</td>
+<td>Float</td>
+<td>Gain Level value.</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-commands-set_eq_band_gain_level-example'>Example</h3>
+
+<p><code>SET_EQ_BAND_GAIN_LEVEL({channelId = 2, bandId = 1, level = 3, roomId:  7977})</code></p>
+
+<h2 id='mixer-proxy-commands-set_eq_band_q_level'>SET_EQ_BAND_Q_LEVEL</h2>
+
+<p><strong>SET EQ BAND Q LEVEL</strong></p>
+
+<p>Sets the EQ Band Q for a Channel.</p>
+
+<h3 id='mixer-proxy-commands-set_eq_band_q_level-name'>Name</h3>
+
+<p><code>SET_EQ_BAND_Q_LEVEL(roomId: Long, channelId: Int, bandId: Int, level: Float)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>roomId</td>
+<td>Long</td>
+<td>ID value of the room.</td>
+</tr>
+<tr>
+<td>channeld</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+<tr>
+<td>bandId</td>
+<td>INT</td>
+<td>ID value of the EQ band.</td>
+</tr>
+<tr>
+<td>level</td>
+<td>Float</td>
+<td>Q Level value.</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-commands-set_eq_band_q_level-example'>Example</h3>
+
+<p><code>SET_EQ_BAND_Q_LEVEL({channelId = 2, bandId = 1, level = 3, roomId:  7977})</code></p>
+
+<h2 id='mixer-proxy-commands-set_eq_band_frquency'>SET_EQ_BAND_FRQUENCY</h2>
+
+<p><strong>SET EQ BAND FREQUENCY</strong></p>
+
+<p>Sets the EQ Band Center Frequency for a Channel.</p>
+
+<h3 id='mixer-proxy-commands-set_eq_band_frquency-name'>Name</h3>
+
+<p><code>SET_EQ_BAND_FREQUENCY(roomId: Long, channelId: Int, bandId: Int, frequency: Int)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>roomId</td>
+<td>Long</td>
+<td>ID value of the room.</td>
+</tr>
+<tr>
+<td>channeld</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+<tr>
+<td>bandId</td>
+<td>INT</td>
+<td>ID value of the EQ band.</td>
+</tr>
+<tr>
+<td>frequency</td>
+<td>INT</td>
+<td>Center frequency value.</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-commands-set_eq_band_frquency-example'>Example</h3>
+
+<p><code>SET_EQ_BAND_FREQUENCY({channelId = 2, bandId = 1, frequency = 200, roomId:  7977})</code></p>
+
+<h2 id='mixer-proxy-commands-set_compressor_component_value'>SET_COMPRESSOR_COMPONENT_VALUE</h2>
+
+<p>Sets the Value of a Compressor Element for a Channel.</p>
+
+<h3 id='mixer-proxy-commands-set_compressor_component_value-name'>Name</h3>
+
+<p><code>SET_COMPRESSOR_COMPONENT_VALUE(roomId: Long, channelId: Int, key: String, value: Float)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>roomId</td>
+<td>Long</td>
+<td>ID value of the room.</td>
+</tr>
+<tr>
+<td>channeld</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+<tr>
+<td>key</td>
+<td>STR</td>
+<td>ID value of the key.</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Float</td>
+<td>Compressor Element value.</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-commands-set_compressor_component_value-example'>Example</h3>
+
+<p><code>SET_COMPRESSOR_COMPONENT_VALUE({channelId = 2, key = &#39;threshold&#39;, value = -10, roomId:  7977})</code></p>
+
+<h2 id='mixer-proxy-commands-set_de_esser_component_value'>SET_DE_ESSER_COMPONENT_VALUE</h2>
+
+<p>Sets the Value of a De-Esser Element for a Channel.</p>
+
+<h3 id='mixer-proxy-commands-set_de_esser_component_value-name'>Name</h3>
+
+<p><code>SET_DE_ESSER_COMPONENT_VALUE(roomId: Long, channelId: Int, key: String, value: Float)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>roomId</td>
+<td>Long</td>
+<td>ID value of the room.</td>
+</tr>
+<tr>
+<td>channeld</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+<tr>
+<td>key</td>
+<td>STR</td>
+<td>ID value of the key.</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Float</td>
+<td>De-esser Element value.</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-commands-set_de_esser_component_value-example'>Example</h3>
+
+<p><code>SET_DE_ESSER_COMPONENT_VALUE({channelId = 2, key = &#39;reduction&#39;, value = -5, roomId:  7977})</code></p>
+
+<h2 id='mixer-proxy-commands-set_noise_gate_component_value'>SET_NOISE_GATE_COMPONENT_VALUE</h2>
+
+<p>Sets the Value of a Noise Gate Element for a Channel.</p>
+
+<h3 id='mixer-proxy-commands-set_noise_gate_component_value-name'>Name</h3>
+
+<p><code>SET_NOISE_GATE_COMPONENT_VALUE(roomId: Long, channelId: Int, key: String, value: Float)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>roomId</td>
+<td>Long</td>
+<td>ID value of the room.</td>
+</tr>
+<tr>
+<td>channeld</td>
+<td>INT</td>
+<td>ID value of the channel.</td>
+</tr>
+<tr>
+<td>key</td>
+<td>STR</td>
+<td>ID value of the key.</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Float</td>
+<td>Noise Gate Element value.</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-commands-set_noise_gate_component_value-example'>Example</h3>
+
+<p><code>SET_NOISE_GATE_COMPONENT_VALUE({channelId = 2, key = &#39;release&#39;, value = 250, roomId:  7977})</code></p>
+<h1 id='mixer-proxy-notifications'>Mixer Proxy Notifications</h1>
+
+<h2 id='mixer-proxy-notifications-channels_init'>CHANNELS_INIT</h2>
+
+<p>Initializes MIXER_CHANNELS Structure.</p>
+
+<h3 id='mixer-proxy-notifications-channels_init-name'>Name</h3>
+
+<p><code>CHANNELS_INIT(MIXER_CHANNELS: Table)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Table</td>
+<td>STR</td>
+<td>Param table encoded as a JSON string param .</td>
+</tr>
+</tbody></table>
+
+<h2 id='mixer-proxy-notifications-zones_init'>ZONES_INIT</h2>
+
+<p><strong>ZONES INIT</strong></p>
+
+<p>Initializes MIXER_ZONES Structure.</p>
+
+<h3 id='mixer-proxy-notifications-zones_init-name'>Name</h3>
+
+<p><code>ZONES_INIT(MIXER_ZONES: Table)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Table</td>
+<td>STR</td>
+<td>Param table encoded as a JSON string param .</td>
+</tr>
+</tbody></table>
+
+<h2 id='mixer-proxy-notifications-mixes_init'>MIXES_INIT</h2><h3 id='mixer-proxy-notifications-mixes_init-name'>Name</h3>
+<p><code>MIXES_INIT(MIXER_ZONES: Table)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Table</td>
+<td>STR</td>
+<td>Param table encoded as a JSON string param .</td>
+</tr>
+</tbody></table>
+
+<h2 id='mixer-proxy-notifications-mixer_connections'>MIXER_CONNECTIONS</h2>
+
+<p>Initializes MIXER_CONNECTIONS Structure.</p>
+
+<h3 id='mixer-proxy-notifications-mixer_connections-name'>Name</h3>
+
+<p><code>MIXER_CONNECTIONS_INIT(MIXER_ZONES: Table)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Table</td>
+<td>STR</td>
+<td>Param table encoded as a JSON string param of mixer zones.</td>
+</tr>
+</tbody></table>
+
+<h2 id='mixer-proxy-notifications-channels_changed'>CHANNELS_CHANGED</h2>
+
+<p>Notification of the currently selected Channel or Mix.</p>
+
+<h3 id='mixer-proxy-notifications-channels_changed-name'>Name</h3>
+
+<p><code>CHANNELS_CHANGED(MIXER_CHANNELS: Table)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Table</td>
+<td>STR</td>
+<td>Param table encoded as a JSON string param  of mixer channels.</td>
+</tr>
+</tbody></table>
+
+<h2 id='mixer-proxy-notifications-channel_changed'>CHANNEL_CHANGED</h2>
+
+<p>Notification of change in any Channel Parameter.</p>
+
+<h3 id='mixer-proxy-notifications-channel_changed-name'>Name</h3>
+
+<p><code>CHANNEL_CHANGED(MIXER_CHANNEL: Table)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Table</td>
+<td>STR</td>
+<td>Param table encoded as a JSON string param  of mixer channel.</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-notifications-channel_changed-example'>Example</h3>
+
+<p>In this example, Channel 1 Input Level has changed to -7.</p>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="nl">"RoomId"</span><span class="p">:</span><span class="mi">7977</span><span class="p">,</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="nl">"input_level"</span><span class="p">:{</span><span class="nl">"value"</span><span class="p">:</span><span class="mi">-7</span><span class="p">}}</span><span class="w">
+</span></code></pre></div>
+
+<p>In this example, The Gain of Band 1 of the EQ in Channel 1 has changed to 7.9.</p>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="nl">"RoomId"</span><span class="p">:</span><span class="mi">7856</span><span class="p">,</span><span class="nl">"eq"</span><span class="p">:{</span><span class="nl">"bands"</span><span class="p">:[{</span><span class="nl">"gain"</span><span class="p">:{</span><span class="nl">"value"</span><span class="p">:</span><span class="mf">7.9000000000000004</span><span class="p">},</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">}]},</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<h2 id='mixer-proxy-notifications-zone_changed'>ZONE_CHANGED</h2>
+
+<p>Notification of change in any Zone Parameter</p>
+
+<h3 id='mixer-proxy-notifications-zone_changed-name'>Name</h3>
+
+<p><code>ZONE_CHANGED(MIXER_ZONE: Table)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Table</td>
+<td>STR</td>
+<td>Param table encoded as a JSON string param  of a mixer zone.</td>
+</tr>
+</tbody></table>
+
+<h3 id='mixer-proxy-notifications-zone_changed-example'>Example</h3>
+
+<p>In this example, Source 2 has been selected in Zone 1.</p>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="nl">"RoomId"</span><span class="p">:</span><span class="mi">7977</span><span class="p">,</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="nl">"source"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="nl">"sourceConnId"</span><span class="p">:</span><span class="mi">3002</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<p>In this example, the Gain in Zone 1 has changed to -22.</p>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="nl">"RoomId"</span><span class="p">:</span><span class="mi">7977</span><span class="p">,</span><span class="nl">"gain"</span><span class="p">:</span><span class="mi">-22</span><span class="p">,</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<h2 id='mixer-proxy-notifications-zone_source_changed'>ZONE_SOURCE_CHANGED</h2>
+
+<p><strong>ZONE SOURCE CHANGED</strong></p>
+
+<p>Notification of Channels with updated naming tags.</p>
+
+<h3 id='mixer-proxy-notifications-zone_source_changed-name'>Name</h3>
+
+<p><code>ZONE_SOURCE_CHANGED(MIXER_CHANNELS: Table)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Table</td>
+<td>STR</td>
+<td>Param table encoded as a JSON string param  of a mixer channels.</td>
+</tr>
+</tbody></table>
+<h1 id='mixer-proxy-variables'>Mixer Proxy Variables</h1>
+
+<h2 id='mixer-proxy-variables-active_rooms'>ACTIVE_ROOMS</h2>
+
+<p>ACTIVE_ROOMS - a comma delimited list of current rooms in the path.</p>
+<h1 id='mixer-proxy-connections'>Mixer Proxy Connections</h1>
+
+<h2 id='mixer-proxy-connections-channel_connections'>CHANNEL_CONNECTIONS</h2>
+
+<p>Channel Connections shall include a channelid (integer) element.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>    <span class="nt">&lt;connection</span> <span class="na">proxybindingid=</span><span class="s">"5001"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;id&gt;</span>3001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>1<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Source 1<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>6<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>True<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;channelid&gt;</span>1<span class="nt">&lt;/channelid&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>STEREO<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+    <span class="nt">&lt;/connection&gt;</span>
+</code></pre></div>
+
+<h2 id='mixer-proxy-connections-channel_connections'>CHANNEL_CONNECTIONS</h2>
+
+<p>Mix Connections shall include a mixid (integer) element</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>    <span class="nt">&lt;connection</span> <span class="na">proxybindingid=</span><span class="s">"5001"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;id&gt;</span>3017<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>1<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Mix 1<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>6<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>True<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;mixid&gt;</span>1<span class="nt">&lt;/mixid&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>STEREO<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+    <span class="nt">&lt;/connection&gt;</span>
+</code></pre></div>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="lua">lua</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
