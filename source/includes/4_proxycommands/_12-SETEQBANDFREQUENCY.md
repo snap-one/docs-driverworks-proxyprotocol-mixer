@@ -1,7 +1,5 @@
 ## SET\_EQ\_BAND\_FRQUENCY
 
-**SET EQ BAND FREQUENCY**
-
 Sets the EQ Band Center Frequency for a Channel.
 
 

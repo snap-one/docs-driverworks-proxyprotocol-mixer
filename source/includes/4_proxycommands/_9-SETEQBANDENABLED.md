@@ -1,7 +1,5 @@
 ## SET\_EQ\_BAND\_ENABLED
 
-** SET EQ BAND ENABLED**
-
 Enable/Disable an EQ Band for a Channel.
 
 ### Name

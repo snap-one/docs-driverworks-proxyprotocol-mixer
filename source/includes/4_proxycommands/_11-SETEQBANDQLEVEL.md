@@ -1,7 +1,5 @@
 ## SET\_EQ\_BAND\_Q\_LEVEL
 
-**SET EQ BAND Q LEVEL**
-
 Sets the EQ Band Q for a Channel.
 
 ### Name

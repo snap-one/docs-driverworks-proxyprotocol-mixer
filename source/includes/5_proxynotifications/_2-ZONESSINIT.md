@@ -1,7 +1,5 @@
 ## ZONES\_INIT
 
-**ZONES INIT**
-
 Initializes MIXER\_ZONES Structure.
 
 ### Name
