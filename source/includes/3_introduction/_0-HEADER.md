@@ -1,6 +1,6 @@
 # Introduction
 
-### Lua Mixer Proxy
+###  Mixer Proxy
 
 _Note: The Mixer Proxy is the first Lua Proxy delivered by Control4. The architecture used to develop this proxy is not currently available to third party developers. Furthermore, drivers developed using the Lua Proxy methodology lack a user interface which is typically provided for a driver written using  Control4’s traditional, non-Lua proxies. Control4 is not in a position to provide user interfaces for third party drivers written using a Lua proxy._
 
@@ -16,11 +16,16 @@ Since Mixes and Channels require different handling logic, the Mixer proxy must 
 
 An important distinction (and possible source of confusion) is how the UI and Proxy handle Input Channel Volume. As in the case of actual mixer devices, an input channel has a level (volume) control which will affect the signal before any further modification of that channel in a mix. For example, if a device can create more than one mix, changing the input channel volume will affect the level of that channel in all mixes. Whereas changing the volume of that channel in a mix will only affect the level of that channel in that mix. While this is a straightforward concept, it does get clouded by Control4 source selection and control logic in conjunction with the fact that the mixer proxy is the first AV Proxy that handles volume control of an input (Room volume control adjusts the volume of an output/zone in a device). To simplify user interaction, it has been decided that, from a Control4 perspective, Input Channel Level will be a configuration element and not supported via the Control4 UI. So, when a Source is selected, the level control is visible but grayed out and not available for modification. When a Mix is selected, all Channels are available for modification in that Mix.
 
+
 **Channel Selected**
 <img src="images/mixerproxy001.jpg"/>
 
 **Mix Selected**
 <img src="images/mixerproxy002.jpg"/>
+
+Note that the Mixer driver development efforts are supported with a Mixer proxy Driver Development Template can be found here: 
+[https://github.com/snap-one/docs-driverworks-proxyprotocol-mixer/tree/main/source/images][2]
+
 
 **Minimum Requirements**
 
@@ -28,3 +33,4 @@ An important distinction (and possible source of confusion) is how the UI and Pr
 - Director version: 4.0.0
 
 [1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-avswitch/#license-copyright-and-trademark
+[2]:	https://github.com/snap-one/docs-driverworks-proxyprotocol-mixer/tree/main/source/images
