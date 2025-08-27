@@ -23,7 +23,7 @@ An important distinction (and possible source of confusion) is how the UI and Pr
 **Mix Selected**
 <img src="images/mixerproxy002.jpg"/>
 
-Note that the Mixer driver development efforts are supported with a Mixer proxy Driver Development Template can be found here: 
+Note that the driver development efforts are supported with a Mixer Proxy Driver Development Template. The mixer\_proxy.zip file containing the template and a README instructional document can be found here: 
 [https://github.com/snap-one/docs-driverworks-proxyprotocol-mixer/tree/main/source/images][2]
 
 
