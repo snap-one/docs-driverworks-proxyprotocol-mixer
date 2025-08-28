@@ -1,6 +1,6 @@
 # Introduction
 
-###  Mixer Proxy
+### Mixer Proxy
 
 _Note: The Mixer Proxy is the first Lua Proxy delivered by Control4. The architecture used to develop this proxy is not currently available to third party developers. Furthermore, drivers developed using the Lua Proxy methodology lack a user interface which is typically provided for a driver written using  Control4’s traditional, non-Lua proxies. Control4 is not in a position to provide user interfaces for third party drivers written using a Lua proxy._
 
@@ -23,7 +23,7 @@ An important distinction (and possible source of confusion) is how the UI and Pr
 **Mix Selected**
 <img src="images/mixerproxy002.jpg"/>
 
-Note that the driver development efforts are supported with a Mixer Proxy Driver Development Template. The mixer\_proxy.zip file containing the template and a README instructional document can be found here: 
+Note that mixer driver development efforts are supported with a Mixer Proxy Driver Development Template. The mixer\_proxy.zip file containing the template and a README instructional document can be found here: 
 [https://github.com/snap-one/docs-driverworks-proxyprotocol-mixer/tree/main/source/images][2]
 
 
